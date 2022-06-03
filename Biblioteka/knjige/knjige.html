@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title> Interaktivna forma za knjige </title>
+        <link rel="stylesheet" href="knjige.css">
+        <script src="knjige.js"></script>
+
+    </head>
+
+        <body>
+            <form class="box" action="knjige.html" method="post">
+
+                <h1>
+                    Izbor knjige
+                </h1>
+
+                <input type="text" name="" placeholder="Pretraži knjige" id="idBook">
+                <input type="submit" name="" value="Traži" onclick="validate()">
+                <h2>
+                    Novi unos
+                </h2>
+
+                <input type="number" name="" placeholder="ID knjige" id="idKnjige">
+                <input type="text" name="" placeholder="Naslov" id="naslov">
+                <input type="text" name="" placeholder="Ime pisca" id="iPisca">
+                <input type="text" name="" placeholder="Nobelovac" id="nob">
+                <input type="text" name="" placeholder="Broj strana" id="brStr">
+                <input type="text" name="" placeholder="Žanr" id="zanr">
+                <input type="text" name="" placeholder="Godina izdanja" id="godIzd">
+                <input type="text" name="" placeholder="Aktivan" id="akt">
+
+                <input type="submit" name="" value="Snimi" onclick="save()">
+                <input type="submit" name="" value="Obriši" onclick="del(idKnjige)">
+
+
+
+            </form>
+        </body>
+
+</html>

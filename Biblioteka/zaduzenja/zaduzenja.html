@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lan="eng">
+
+    <head>
+        <meta charset="utf-8">
+        <title> Interaktivna forma za zaduženja </title>
+        <link rel="stylesheet" href="zaduzenja.css">
+        <script src="zaduzenja.js"></script>
+
+    </head>
+
+        <body>
+            <form class="box" action="zaduzenja.html" method="post">
+
+                <h1>
+                    Izbor zaduženja
+                </h1>
+
+                <input type="text" name="" placeholder="Pretraži zaduženja" id="idclan">
+                <input type="submit" name="" value="Traži" onclick="validate()">
+                <h2>
+                    Novi unos
+                </h2>
+
+                <input type="number" name="" placeholder="ID člana" id="idclan">
+                <input type="number" name="" placeholder="ID knjige" id="idknjiga">
+                <input type="text" name="" placeholder="Datum zaduženja" id="datum">
+                <input type="text" name="" placeholder="Datum vraćanja" id="datum2">
+                <input type="text" name="" placeholder="Vraćeno" id="dn">
+                
+
+                <input type="submit" name="" value="Snimi" onclick="save()">
+                <input type="submit" name="" value="Obriši" onclick="del(idclan)">
+
+
+
+            </form>
+        </body>
+
+</html>
